@@ -5,6 +5,8 @@ name: Projeto de CI Alura
 
 on:
   pull_request:
+    paths:
+      - 'proj_Alura_git/allbooks-aula-01/**'
     branches: [ "main"]
 
 jobs:
@@ -25,4 +27,6 @@ jobs:
         node-version: 24.
         cache: 'npm'
     - run: npm install
+      working-directory: proj_Alura_git/allbooks-aula-01/
     - run: npm test
+      working-directory: proj_Alura_git/allbooks-aula-01/
