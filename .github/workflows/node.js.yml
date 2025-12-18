@@ -5,7 +5,7 @@ name: Projeto CI Alura
 
 on:
   pull_request:
-    branches: [ "altera-server" ]
+    branches: [ "main", "altera-server" ]
 
 jobs:
   build:
